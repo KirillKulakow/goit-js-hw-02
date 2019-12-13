@@ -4,9 +4,7 @@ Task 1
 */
 
 function calculateEngravingPrice(string, price) {
-    let stringArray = string.split(' ');
-    let stringNumber = stringArray.length;
-    let result = stringNumber * price;
+    let result = string.split(' ').length * price;
     return result
 }
 

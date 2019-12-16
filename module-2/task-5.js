@@ -4,17 +4,13 @@ Task 5
 */
 
 function checkForSpam(string) {
-    let strLower = string.toLowerCase();
-    let stringArray = strLower.split('');
-    let result = false;
-    for (let i = 0; i < stringArray.length; i++){
-        if (stringArray[i] === 's' && stringArray[i+1] === 'p' && stringArray[i+2] === 'a' && stringArray[i+3] === 'm' || 
-        stringArray[i] === 's' && stringArray[i+1] === 'a' && stringArray[i+2] === 'l' && stringArray[i+3] === 'e') {
-            result = true;
-        }
+    for (let i = 0; i < string.split(' ').length; i++) {
+      if (string.toLowerCase().split(' ')[i].includes('sale') ||  string.toLowerCase().split(' ')[i].includes('spam')) {
+    return true;
+      }
     }
-    return result;
-}
+    return false
+  }
 
 console.log(checkForSpam('Latest technology news'));
 console.log(checkForSpam('JavaScript weekly newsletter'));

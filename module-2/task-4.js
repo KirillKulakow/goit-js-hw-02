@@ -4,18 +4,8 @@ Task 4
 */
 
 function formatString(string) {
-    let stringArray = string.split('');
-    let result = '';
-    let resultArr = [];
-    if (stringArray.length >= 40) {
-        resultArr = stringArray.slice(0, 39);
-        resultArr.push(' ...');
-        result = resultArr.join('');
-    } else {
-        resultArr = stringArray;
-        result = resultArr.join('');
-    }
-    return result;
+    if (string.split('').length >= 40) {let strArr = string.split(''); strArr.splice(39, 39, ' ...');
+    return strArr.join('');} else {return string}
 }
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
@@ -26,3 +16,4 @@ console.log(
       'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
     ),
   );
+

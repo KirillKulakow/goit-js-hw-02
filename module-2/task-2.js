@@ -1,13 +1,10 @@
 'use strict';
 /*
-Task 1
+Task 2
 */
 
 function calculateEngravingPrice(string, price) {
-    let stringArray = string.split(' ');
-    let stringNumber = stringArray.length;
-    let result = stringNumber * price;
-    return result
+    return string.split(' ').length * price
 }
 
 console.log(

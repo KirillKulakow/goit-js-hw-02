@@ -5,8 +5,7 @@ Task 1
 
 function logItems(array) {
     for (let i = 0; i <= array.length - 1; i++) {
-        let result = `${i+1} - ${array[i]}`;
-        console.log(result);
+        console.log(`${i+1} - ${array[i]}`);
     }
 }
 

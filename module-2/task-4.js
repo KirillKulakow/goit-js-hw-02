@@ -4,8 +4,7 @@ Task 4
 */
 
 function formatString(string) {
-    if (string.split('').length >= 40) {let strArr = string.split(''); strArr.splice(39, 39, ' ...');
-    return strArr.join('');} else {return string}
+    if (string.length >= 40) {return string.slice(0, 40) + ' ...';} else {return string}
 }
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

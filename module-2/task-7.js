@@ -19,10 +19,9 @@ const addLogin = function(allLogins, login) {
     } 
     if (!isLoginUnique(allLogins, login)) {
         return 'Такой логин уже используется!'
-    } else {
+    }
         allLogins.push(login);
         return 'Логин успешно добавлен!';
-    }
   };
 
 console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'

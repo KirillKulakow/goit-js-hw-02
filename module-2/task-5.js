@@ -4,10 +4,8 @@ Task 5
 */
 
 function checkForSpam(string) {
-      if (string.toLowerCase().includes('sale') ||  string.toLowerCase().includes('spam')) {
-    return true
-      } return false
-  }
+return (string.toLowerCase().includes('sale') || string.toLowerCase().includes('spam'));
+}
 
 console.log(checkForSpam('Latest technology news'));
 console.log(checkForSpam('JavaScript weekly newsletter'));

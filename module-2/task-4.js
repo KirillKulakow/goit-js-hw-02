@@ -4,7 +4,7 @@ Task 4
 */
 
 function formatString(string) {
-    if (string.length >= 40) {return string.slice(0, 40) + ' ...';} else {return string}
+    return string.length >= 40 ? `${string.slice(0, 40) + ' ...'}` : `${string}`;
 }
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

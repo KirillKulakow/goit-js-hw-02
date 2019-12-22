@@ -8,9 +8,10 @@ const numbers = [];
 let total = 0;
 do {
   input = prompt('Введите число!');
-  if (Number.isNaN(Number(input)) || input === '') {
+  if (Number.isNaN(Number(input))) {
     alert('Введите число!');
-  } else if (input != null) {
+  }
+  if (input != null) {
     numbers.push(Number(input));
   }
 } while (input != null);
